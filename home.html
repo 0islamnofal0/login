@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establish</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=OFL+Sorts+Mill+Goudy+TT:wght@400&display=swap">
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'OFL Sorts Mill Goudy TT', sans-serif;
+            background: #eee; /* Set a background color for the body */
+        }
+
+        header {
+            /* Remove the background color and adjust padding */
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            color: rgb(0, 0, 0); /* Set the text color to white */
+            cursor: default;
+        }
+
+        .background-pic {
+            background: url('shake2.jpg') center center/cover;
+            height: calc(100vh - 0px); /* Adjust the height as needed */
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column; /* Make the content stack vertically */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(0, 0, 0); /* Set the text color to white */
+            /* Adjust the background color darkness (opacity) */
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0); /* Add a semi-transparent white background for better text visibility */
+            cursor: default;
+        }
+
+        .explore-header {
+            font-family: 'OFL Sorts Mill Goudy TT', serif;
+            font-size: 55px;
+            margin-bottom: -60px; /* Decrease the space between "Explore" and "Establish" */
+        }
+
+        .business-needs-text {
+            font-family: 'OFL Sorts Mill Goudy TT', serif;
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 55px;
+        }
+
+        .get-started-button {
+            padding: 10px 20px; /* Increase button size */
+            background-color: #5c837460;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 50px;
+            font-family: 'OFL Sorts Mill Goudy TT', serif;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease; /* Add a transition for smooth animation */
+            font-weight: bold;
+        }
+
+        .get-started-button:hover {
+            transform: scale(0.95); /* Shrink button on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Establish</h1>
+    </header>
+
+    <div class="background-pic">
+        <div class="content">
+            <h2 class="explore-header">Explore</h2>
+            <h2 class="explore-header">Establish</h2> <!-- Make "Explore" and "Establish" appear above each other -->
+            <p class="business-needs-text">What Your Business Needs</p>
+            <button class="get-started-button" onclick="window.location.href='business.html'">Get Started</button>
+        </div>
+    </div>
+
+</body>
+</html>
